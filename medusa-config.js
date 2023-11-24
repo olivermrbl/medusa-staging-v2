@@ -68,7 +68,7 @@ const modules = {
     },
   },
   productService: "@medusajs/product",
-  pricingService: "@medusajs/product",
+  pricingService: "@medusajs/pricing",
 };
 
 /** @type {import('@medusajs/medusa').ConfigModule["projectConfig"]} */
