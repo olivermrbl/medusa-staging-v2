@@ -29,7 +29,7 @@ const ADMIN_CORS =
 const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
 
 const DATABASE_URL =
-  process.env.DATABASE_URL || "postgres://localhost/medusa-starter-default";
+  process.env.DATABASE_URL || "postgres://localhost/medusa-staging-v2";
 
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
@@ -67,6 +67,8 @@ const modules = {
       redisUrl: REDIS_URL,
     },
   },
+  productService: "@medusajs/product",
+  pricingService: "@medusajs/product",
 };
 
 /** @type {import('@medusajs/medusa').ConfigModule["projectConfig"]} */
