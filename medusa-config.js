@@ -76,7 +76,9 @@ const projectConfig = {
   store_cors: STORE_CORS,
   database_url: DATABASE_URL,
   admin_cors: ADMIN_CORS,
-
+  feature_flags: {
+    medusa_v2: true
+  },
   redis_url: REDIS_URL,
 };
 
